@@ -20,3 +20,4 @@ bash scripts/setup_env.sh --with-codeql
 - Kích hoạt môi trường và kiểm tra:
 source .venv/bin/activate
 bash scripts/verify_env.sh
+- Tạo .env
