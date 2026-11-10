@@ -1,0 +1,27 @@
+# --- Core & Environment ---
+python-dotenv>=1.0.1
+pyyaml>=6.0.1
+tqdm>=4.66.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# --- TV1: LLM Inference, Prompting & RAG (Tuần 1 - Tuần 5) ---
+openai>=1.50.0
+google-generativeai>=0.8.0
+transformers>=4.44.0
+accelerate>=0.33.0
+huggingface-hub>=0.24.0
+chromadb>=0.5.5
+sentence-transformers>=3.0.0
+
+# --- TV2: SAST Tools, SARIF Parsing & Visualization (Tuần 1 - Tuần 5) ---
+bandit>=1.7.9
+semgrep>=1.85.0
+sarif-om>=1.0.4
+jschema-to-python>=1.2.3
+matplotlib>=3.9.0
+seaborn>=0.13.2
+
+# --- Web Demo UI (Tuần 6) ---
+streamlit>=1.38.0
+gradio>=4.44.0

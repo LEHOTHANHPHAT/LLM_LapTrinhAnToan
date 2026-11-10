@@ -1,0 +1,31 @@
+# Môi trường ảo Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Biến môi trường & API Keys
+.env
+
+# Dữ liệu lớn, Database CodeQL và Kết quả sinh tự động
+data/benchmarks/*
+!data/benchmarks/.gitkeep
+data/knowledge_base/*
+!data/knowledge_base/.gitkeep
+data/generated_code/*
+!data/generated_code/.gitkeep
+data/sarif_reports/*
+!data/sarif_reports/.gitkeep
+data/evaluation_results/*
+!data/evaluation_results/.gitkeep
+codeql_dbs/
+*.db
+
+# Công cụ CodeQL tải cục bộ
+.tools/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store

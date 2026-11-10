@@ -1,0 +1,10 @@
+# Cấu hình công cụ phân tích tĩnh SAST (Dành cho TV2)
+codeql:
+  language: python
+  query_suite: python-security-extended.qls
+  output_format: sarif-latest
+
+secondary_sast:
+  enable_bandit: true
+  enable_semgrep: true
+  semgrep_ruleset: "p/python"

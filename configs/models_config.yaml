@@ -1,0 +1,23 @@
+# Cấu hình tham số suy luận chuẩn theo bài báo gốc (Table 3)
+generation_defaults:
+  temperature_code: 0.0          # Dùng cho Code Generation & Repair
+  temperature_hint: 0.7          # Dùng cho Hint Generation & Explained Feedback
+  temperature_judge: 0.0         # Dùng cho LLM-as-a-Judge
+  top_p: 1.0
+  max_new_tokens_open: 2048
+  max_new_tokens_api: 4096
+  top_k_hints: 5
+
+models:
+  gpt-4o-mini:
+    provider: openai
+    model_name: gpt-4o-mini
+  llama-3.1-8b:
+    provider: ollama
+    model_name: llama3.1:8b-instruct-fp16
+  codellama-7b:
+    provider: ollama
+    model_name: codellama:7b-instruct
+  qwen2.5-coder-7b:
+    provider: ollama
+    model_name: qwen2.5-coder:7b-instruct

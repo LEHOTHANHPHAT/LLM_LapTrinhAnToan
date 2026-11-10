@@ -1,0 +1,9 @@
+services:
+  sec-codegen-env:
+    build: .
+    container_name: llm_sec_codegen
+    volumes:
+      - .:/workspace
+    env_file:
+      - .env
+    tty: true
